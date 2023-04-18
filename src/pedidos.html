@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Handlee&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<!-- Menu Principal -->
+<nav class="navbar sticky-top" style="background-color: #9BD4FF; border-color: black;">
+    <div class="container-fluid">
+        <span>
+            <img class="bordeLogo" src="../img/Logos_Lore/famigurth_logo_terminado_nav.png" alt="" height="140px"
+                class="d-inline-block align-top">
+        </span>
+        <!-- Menu Dibujos -->
+        <span class="flexContainerMenu">
+            <div class="flexImgItem">
+                <a href="../src/index.html">
+                    <img src="../img/Logos_Lore/Papigurth_nav.png" alt="" width="40px">
+                    <br>
+                    Home
+                </a>
+            </div>
+            <div class="flexImgItem">
+                <img src="../img/Logos_Lore/Brodyguth_nav.png" alt="" width="40px">
+                <br>
+                Quienes Somos
+            </div>
+            <div class="flexImgItem">
+                <img src="../img/Logos_Lore/YOGUTHINA_nav.png" alt="" width="40px">
+                <br>
+                Tu Pedido
+            </div>
+            <div class="flexImgItem">
+                <a href="#Contacto">
+                    <img src="../img/Logos_Lore/Babygurth_nav.png" alt="" width="40px">
+                    <br>
+                    Contáctanos
+                </a>
+            </div>
+            <div class="flexImgItem">
+                <img src="../img/Logos_Lore/mamigurth_nav.png" alt="" width="40px">
+                <br>
+                Login
+            </div>
+        </span>
+    </div>
+</nav>
+
+<body>
+    <!-- margen -->
+    <div class="margen">
+        <!-- Logo & Slogan -->
+        <div>
+            <h2 class="logoCursiva">Salud y nutrición en tu Yogurt Artesanal</h2>
+        </div>
+        <br>
+        <!-- Mensaje Pedido -->
+        <div class="flexContainer">
+            <img src="../img/Logos_Lore/Babygurth_240.png" alt="" width="200px" height="200px">
+            <span class="fontContenidos">
+                A continuación puedes hacer el pedido de tus productos favoritos.
+
+                Para facilitar tu compra sigue los siguientes pasos:
+                <ul>
+                    <li>La imágenes a la derecha (sabor) y la izquierda (producto) te ayudarán a elegir tu producto y
+                        sabor predilectos</li>
+                </ul>
+                <ol>
+                    <li>Elije el producto que más te guste. Tenemos una lista desplegable para facilitar tu elección
+                    </li>
+                    <li>Elije tu sabor preferido</li>
+                    <li>Elije la cantidad que quieres comprar</li>
+                </ol>
+            </span>
+        </div>
+        <br><br>
+        <!-- Formulario Pedido -->
+        <div class="flexContainer">
+            <!-- Panel Productos -->
+            <div class="panelIzquierdo">
+                <h4 class="logoCursiva">Productos</h4>
+                <div>
+                    <img src="../img/Fotos_redes/Postre_Yogurthina.jpg" alt="" class="imgPanel">
+                    <p class="fontPanel">Tipo Postre</p>
+                </div>
+                <div>
+                    <img src="../img/Fotos_redes/Yogurt_Litro.jpg" alt="" class="imgPanel">
+                    <p class="fontPanel">Yogurt Litro</p>
+                </div>
+                <div>
+                    <img src="../img/Fotos_redes/Kumis_Litro.jpg" alt="" class="imgPanel">
+                    <p class="fontPanel">Kumis</p>
+                </div>
+                <div>
+                    <img src="../img/Fotos_redes/Yogurt_Light.jpg" alt="" class="imgPanel">
+                    <p class="fontPanel">Yogurt bajo en azúcar</p>
+                </div>
+            </div>
+            <!-- Panel Formulario -->
+            <div class="panelCentral">
+                <h1 class="fontPanel"> Envíanos tu pedido </h1>
+
+                <form class="row g-1" action="mailto:juangaro104@hotmail.com" method="post" enctype="text/plain">
+                    <fieldset class="flexPedido">
+                        <div class="fontPanel">Información de Contacto</div>
+                        <div class="input-group mb-1">
+                            <div class="col-8">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombreCliente"
+                                    placeholder="Tu nombre" autofocus>
+                            </div>
+                            <div class="col-4">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="telefono" name="telefonoCliente"
+                                    placeholder="Tu # teléfono - celular">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" name="direccionCliente"
+                                placeholder="calle/carrera # 00 - 00">
+                        </div>
+                        <div class="col-12">
+                            <label for="detalleDieccion" class="form-label">Detalle dirección</label>
+                            <input type="text" class="form-control" id="detalleDieccion" name="detalleDirCliente"
+                                placeholder="Barrio, conjunto, edificio, torre, apartamento y/o información que nos permita llegar">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="flexPedido">
+                        <legend class="fontPanel"> Tu Pedido </legend>
+                        Producto 1
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectProducto1">Producto</label>
+                            <select class="form-select" name="Producto-1" id="SelectProducto1">
+                                <option selected>Elije...</option>
+                                <option value="1">Tipo Postre</option>
+                                <option value="2">Yogurth litro</option>
+                                <option value="3">Kumis</option>
+                                <option value="3">Yogurt bajo en azúcar</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectSabor1">Sabor</label>
+                            <select class="form-select" name="Sabor-1" id="SelectSabor1">
+                                <option selected>Elije...</option>
+                                <option value="1">Natural</option>
+                                <option value="2">Mora</option>
+                                <option value="3">Melocotón</option>
+                                <option value="3">Fresa</option>
+                            </select>
+                            <label class="input-group-text" for="SelectCantidad1">Cantidad</label>
+                            <input type="number" class="form-select" name="Cantidad-1" id="SelectCantidad1">
+                        </div>
+                        <br>
+                        Producto 2
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectProducto2">Producto</label>
+                            <select class="form-select" name="Producto-2" id="SelectProducto2">
+                                <option selected>Elije...</option>
+                                <option value="1">Tipo Postre</option>
+                                <option value="2">Yogurth litro</option>
+                                <option value="3">Kumis</option>
+                                <option value="3">Yogurt bajo en azúcar</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectSabor2">Sabor</label>
+                            <select class="form-select" name="Sabor-2" id="SelectSabor2">
+                                <option selected>Elije...</option>
+                                <option value="1">Natural</option>
+                                <option value="2">Mora</option>
+                                <option value="3">Melocotón</option>
+                                <option value="3">Fresa</option>
+                            </select>
+                            <label class="input-group-text" for="SelectCantidad2">Cantidad</label>
+                            <input type="number" class="form-select" name="Cantidad-2" id="SelectCantidad2">
+                        </div>
+                        <br>
+                        Producto 3
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectProducto3">Producto</label>
+                            <select class="form-select" name="Producto-3" id="SelectProducto3">
+                                <option selected>Elije...</option>
+                                <option value="1">Tipo Postre</option>
+                                <option value="2">Yogurth litro</option>
+                                <option value="3">Kumis</option>
+                                <option value="3">Yogurt bajo en azúcar</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectSabor3">Sabor</label>
+                            <select class="form-select" name="Sabor-3" id="SelectSabor3">
+                                <option selected>Elije...</option>
+                                <option value="1">Natural</option>
+                                <option value="2">Mora</option>
+                                <option value="3">Melocotón</option>
+                                <option value="3">Fresa</option>
+                            </select>
+                            <label class="input-group-text" for="SelectCantidad3">Cantidad</label>
+                            <input type="number" class="form-select" name="Cantidad-3" id="SelectCantidad3">
+                        </div>
+                        <br>
+                        Producto 4
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectProducto4">Producto</label>
+                            <select class="form-select" name="Producto-4" id="SelectProducto4">
+                                <option selected>Elije...</option>
+                                <option value="1">Tipo Postre</option>
+                                <option value="2">Yogurth litro</option>
+                                <option value="3">Kumis</option>
+                                <option value="3">Yogurt bajo en azúcar</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-1">
+                            <label class="input-group-text" for="SelectSabor4">Sabor</label>
+                            <select class="form-select" name="Sabor-4" id="SelectSabor4">
+                                <option selected>Elije...</option>
+                                <option value="1">Natural</option>
+                                <option value="2">Mora</option>
+                                <option value="3">Melocotón</option>
+                                <option value="3">Fresa</option>
+                            </select>
+                            <label class="input-group-text" for="SelectCantidad4">Cantidad</label>
+                            <input type="number" class="form-select" name="Cantidad-4" id="SelectCantidad4">
+                        </div>
+                    </fieldset>
+                    <br>
+                    Quieres dejarnos un Comentario o información adicional? Puedes escribirlo en el siguiente campo:
+                    <br>
+                    <textarea name="Comentarios" id="comentarios" cols="100" rows="10">Comentario:
+                    </textarea>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-outline-primary"><img src="../img/Fotos_redes/e-mail.png"
+                                alt="" width="40px"> Enviar Pedido</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Panel Sabores -->
+            <div class="panelDerecho">
+                <h4 class="logoCursiva">Sabores</h4>
+                <div>
+                    <img src="../img/Fotos_redes/Dulce_Mora.jpg" alt="" class="imgPanel">
+                    <p class="fontPanel">Mora</p>
+                    <p class="fontPanel">Melocotón</p>
+                    <p class="fontPanel">Fresa</p>
+                    <p class="fontPanel">Natural</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer id="Contacto" style="background-color: #9BD4FF; border-color: black;" class="navbar">
+    <div class="tituloCursiva">
+        <h4><b>Contáctanos</b></h4>
+    </div>
+    <div class="fontContenidos">
+        <span>
+            <img src="../img/Fotos_redes/insta.png" alt="" height="40px"> Fami_gurt
+            <br>
+            <img src="../img/Fotos_redes/facebook.png" alt="" height="40px"> Fami-gurt
+        </span>
+    </div>
+    <div class="fontContenidos">
+        <span>
+            <img src="../img/Fotos_redes/user-icon.png" alt="" height="40px"> Julián Andrés García Rojas
+            <br>
+            <img src="../img/Fotos_redes/whatsapp-icon.png" alt="" height="40px"> 321 406 5957
+            <br>
+            <img src="../img/Fotos_redes/e-mail.png" alt="" height="40px"> juangaro104@hotmail.com
+        </span>
+    </div>
+</footer>
+
+</html>
